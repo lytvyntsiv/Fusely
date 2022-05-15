@@ -1,0 +1,75 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    padding-top: 20px;
+    margin: 0 auto 41px auto;
+
+    @include desktop {
+      margin-bottom: 80px;
+      padding: 20px 80px 0 80px;
+    }
+  }
+  &__mobile-nav {
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      position: static;
+      padding: 0;
+    }
+  }
+  &__user-nav {
+    display: none;
+    width: min-content;
+    margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+      display: flex;
+    }
+  }
+  &__button {
+    margin-right: 20px;
+    width: 184px;
+    height: 51px;
+  }
+  &__burger-menu {
+    height: 100%;
+
+    &:hover div::before{
+      transform: translateX(5px) translateY(7px);
+    }
+    &:hover div::after{
+      transform: translateX(-5px) translateY(-10px);
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  &__burger-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: $colorMain;
+
+    &::before,
+    &::after{
+      content: '';
+      display: block;
+      width: 25px;
+      height: 3px;
+      border-radius: 1px;
+      transition-duration: .3s;
+      background-color: $colorMain;
+    }
+    &::before {
+      transform: translateY(7px);
+    }
+    &::after {
+      transform: translateY(-10px);
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.banner {
+  margin: 0 auto;
+  &__content {
+    margin-bottom: 30px;
+  }
+  &__text {
+    @include desktop {
+      max-width: 489px;
+    }
+  }
+  &__tittle {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 109%;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+    color: $colorDark;
+
+    @include tablet {
+      font-size: 86px;
+      line-height: 88px;
+    }
+    @include desktop {
+      margin-bottom: 30px;
+    }
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: $colorSecond;
+    margin-bottom: 24px;
+
+    @include desktop {
+      margin-bottom: 30px;
+    }
+  }
+  &__img {
+    max-width: 100%;
+    margin-bottom: 80px;
+
+    @include tablet {
+      margin-bottom: 105px;
+    }
+    @include desktop {
+      max-width: 642px;
+      margin: 0 0 120px 0;
+    }
+  }
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}

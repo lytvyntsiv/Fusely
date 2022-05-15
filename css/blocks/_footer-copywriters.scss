@@ -1,0 +1,17 @@
+.footer-copywriters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  padding-bottom: 35px;
+
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $colorSecond;
+  }
+  @include desktop {
+    padding: 0 80px 40px 80px;
+  }
+}

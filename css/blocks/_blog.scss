@@ -1,0 +1,95 @@
+.blog {
+
+  &__container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__tittle {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 118%;
+    letter-spacing: -1px;
+    color: $colorDark;
+  }
+  &__button {
+    max-width: 115px;
+  }
+  &__card {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  &__image-container {
+    width: 100%;
+    margin-bottom: 26px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  &__img {
+    width: 100%;
+    transition-duration: .5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__card-tittle {
+    margin-bottom: 6px;
+  }
+  &__card-text {
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: $colorSecond;
+  }
+
+  @include tablet {
+    &__container-header {
+      margin-bottom: 90px;
+    }
+    &__image-container {
+      max-width: 353px;
+      margin: 0;
+    }
+    &__card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 45px;
+    }
+    &__card-text {
+      max-width: 308px;
+    }
+  }
+  @include desktop {
+    margin-bottom: 370px;
+
+    &__tittle {
+      font-size: 60px;
+      line-height: 118%;
+    }
+    &__container-cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__image-container {
+      margin-bottom: 26px;
+      max-width: 363px;
+    }
+    &__img {
+      max-width: 363px;
+    }
+    &__card {
+      display: block;
+      max-width: 363px;
+      margin-bottom: 0;
+    }
+    &__card-text {
+      max-width: none;
+    }
+  }
+}

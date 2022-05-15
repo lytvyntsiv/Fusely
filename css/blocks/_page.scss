@@ -1,0 +1,12 @@
+.page {
+  &__banner,
+  &__features,
+  &__price,
+  &__blog {
+    margin: 0 auto;
+  }
+  &__partners {
+    margin-bottom: 100px;
+  }
+}
+

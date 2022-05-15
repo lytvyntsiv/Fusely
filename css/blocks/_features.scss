@@ -1,0 +1,55 @@
+.features {
+  &__cart {
+    margin: 0 auto;
+  }
+  &__img {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__tittle {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 118%;
+    letter-spacing: -1px;
+    color: $colorDark;
+    margin-bottom: 16px;
+
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%;
+    color: $colorSecond;
+    margin-bottom: 16px;
+  }
+  @include tablet {
+    &__subtitle,
+    &__tittle {
+      margin-bottom: 24px;
+    }
+    &__img {
+      margin-bottom: 140px;
+    }
+  }
+  @include desktop {
+    &__cart {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+    }
+    &__text {
+      max-width: 400px;
+    }
+    &__img {
+      max-width: 600px;
+    }
+  }
+}

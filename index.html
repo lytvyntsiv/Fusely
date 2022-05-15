@@ -1,0 +1,242 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Fusely</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/utils/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  </head>
+<body class="page">
+  <header class="header page__header">
+    <div class="container header__container">
+      <a class="logo" href="#">
+        <img src="img/fusely%20logo.svg" alt="logo">
+      </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Home</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Features</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Pricing</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Blog</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__user-nav">
+          <button class="button header__button button--small button--transparent">Log in</button>
+          <button class="button">Get Started</button>
+        </div>
+      <div class="header__burger-menu" onclick="myFunction()">
+        <div class="header__burger-icon"></div>
+      </div>
+    </div>
+    <div class="modal-menu">
+      <ul class="main-nav__list modal__nav">
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Home</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Features</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Pricing</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Blog</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
+      </ul>
+      <div class="header__user-nav modal-menu__user-nav">
+        <button class="button modal-menu__button button--small button--transparent">Log in</button>
+        <button class="button">Get Started</button>
+      </div>
+    </div>
+    <section class="banner page__banner container">
+      <div class="banner__text">
+        <div class="banner__content">
+          <h1 class="banner__tittle">Let’s get fusely together</h1>
+          <p class="banner__subtitle">
+            Outcome-centered product that reduce churn, optimize pricing, and grow your subscription business end-to-end.
+          </p>
+          <button class="button">Get Started</button>
+        </div>
+      </div>
+      <img class="banner__img" src="img/banner-img.jpg" alt="#">
+    </section>
+  </header>
+  <main class="main page__main">
+    <section class="partners page__partners">
+      <div class="container partners__container">
+        <a href="https://asterabintaro.com/" class="partners__wrap">
+          <img class="partners__img" src="img/partners-1%20binator%20logo.svg" alt="binator">
+        </a>
+        <a href="https://buyme.com.ua/ua/" class="partners__wrap">
+          <img class="partners__img" src="img/partners-2%20buyme%20logo.svg" alt="buyme">
+        </a>
+        <a href="https://logoipsum.com/" class="partners__wrap">
+          <img class="partners__img" src="img/partners-3%20loogipsum%20logo.svg" alt="loogipsum">
+        </a>
+        <a href="https://umbrella.cisco.com/" class="partners__wrap">
+          <img class="partners__img" src="img/partners-4%20umbrella%20logo.svg" alt="umbrella">
+        </a>
+        <a href="https://squareup.com/us/en" class="partners__wrap">
+          <img class="partners__img" src="img/partners-5%20square%20logo.svg" alt="square">
+        </a>
+      </div>
+    </section>
+    <section class="features page__features">
+      <div class="features__cart container">
+        <div class="features__text">
+          <h2 class="features__tittle">Detailed Examination</h2>
+          <p class="features__subtitle">A daily dataset to keep you up to date on subscription market trends and what's happening in your vertical.</p>
+          <a href="" class="link features__link">Learn more</a>
+        </div>
+        <img class="features__img" src="img/features-image--1.svg" alt="#">
+      </div>
+      <div class="features__cart container">
+        <div class="features__text">
+          <h2 class="features__tittle">Creative Solutions</h2>
+          <p class="features__subtitle">Creativity is our second name. We're full of inventive ideas and we're happy to present them to you.</p>
+          <a href="" class="link features__link">Learn more</a>
+        </div>
+        <img class="features__img" src="img/features-image--2.svg" alt="#">
+      </div>
+      <div class="features__cart container">
+        <div class="features__text">
+          <h2 class="features__tittle">Professional Team</h2>
+          <p class="features__subtitle">Well, obviously, we're professionals. Don't hesitate - get to know us better.</p>
+          <a href="" class="link features__link">Learn more</a>
+        </div>
+        <img class="features__img" src="img/features-image--3.svg" alt="#">
+      </div>
+    </section>
+    <section class="price page__price container">
+      <h2 class="price__tittle price__tittle--center">Choose your plan</h2>
+      <div class="price__cards-container">
+        <div class="price__card">
+          <p class="price__tariff">Starter</p>
+          <div class="price__cost">Free</div>
+          <ul class="price__storage">
+            <li class="price__storage-item">Dashboard</li>
+            <li class="price__storage-item">Limited Support</li>
+            <li class="price__storage-item">Forever free</li>
+          </ul>
+          <button class="button price__button button--pink">Get Started</button>
+        </div>
+        <div class="price__card">
+          <p class="price__tariff">Premium</p>
+          <div class="price__cost">$29</div>
+          <ul class="price__storage">
+            <li class="price__storage-item">Dashboard</li>
+            <li class="price__storage-item">Limited Support</li>
+            <li class="price__storage-item">Forever free</li>
+          </ul>
+          <button class="button price__button button--pink">Get Started</button>
+        </div>
+        <div class="price__card">
+          <p class="price__tariff">Enterprise</p>
+          <div class="price__cost">$49</div>
+          <ul class="price__storage">
+            <li class="price__storage-item">Dashboard</li>
+            <li class="price__storage-item">Limited Support</li>
+            <li class="price__storage-item">Forever free</li>
+          </ul>
+          <button class="button price__button button--pink">Get Started</button>
+        </div>
+      </div>
+    </section>
+    <section class="blog page__blog container">
+      <div class="blog__container-header">
+        <h2 class="blog__tittle">From our blog</h2>
+        <button class="button blog__button button--pink">View all</button>
+      </div>
+      <div class="blog__container-cards">
+        <div class="blog__card">
+          <div class="blog__image-container">
+            <img class="blog__img" src="img/block-card--1.jpg" alt="#">
+          </div>
+          <div class="blog__content-wrap">
+            <h3 class="blog__card-tittle">What’s Fusely?</h3>
+            <p class="blog__card-text">A brand new company, created for everyone. This article will help you understand what "fusely" stands for.</p>
+            <a href="#" class="link features__link">Read more</a>
+          </div>
+        </div>
+        <div class="blog__card">
+          <div class="blog__image-container">
+            <img class="blog__img" src="img/block-card--2.jpg" alt="#">
+          </div>
+          <div class="blog__content-wrap">
+            <h3 class="blog__card-tittle">Introducing Fusely Engage</h3>
+            <p class="blog__card-text">We’re happy to announce the Fusely Engage. The first growth automation platform designed for the digital interactions.</p>
+            <a href="#" class="link features__link">Read more</a>
+          </div>
+        </div>
+        <div class="blog__card">
+          <div class="blog__image-container">
+            <img class="blog__img" src="img/block-card--3.jpg" alt="#">
+          </div>
+          <div class="blog__content-wrap">
+            <h3 class="blog__card-tittle">Premium vs Enterprise plan</h3>
+            <p class="blog__card-text">Let’s compare our most popular plans: Premium and Enterprise. This article will help you decide which one will be better for your needs.</p>
+            <a href="#" class="link features__link">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-banner">
+      <div class="contact-banner__container">
+        <h2 class="contact-banner__tittle">Interested in getting fusely?</h2>
+        <button class="button contact-banner__button">Let’s talk</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer page__footer ">
+    <section class="footer__content container">
+      <div class="footer__info">
+        <h3 class="footer__tittle">Product</h3>
+        <ul class="footer__list">
+          <li class="footer__item">How it works</li>
+          <li class="footer__item">Features</li>
+          <li class="footer__item">Pricing</li>
+          <li class="footer__item">FAQ</li>
+          <li class="footer__item">Download</li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <h3 class="footer__tittle">Company</h3>
+        <ul class="footer__list">
+          <li class="footer__item">About</li>
+          <li class="footer__item">Blog</li>
+          <li class="footer__item">Partnership</li>
+          <li class="footer__item">Terms of use</li>
+          <li class="footer__item">Privacy policy</li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <h3 class="footer__tittle">Support</h3>
+        <ul class="footer__list">
+          <li class="footer__item">Help center</li>
+          <li class="footer__item">Contact us</li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <h3 class="footer__tittle">Get in touch</h3>
+        <ul class="footer__list--icon">
+          <li class="footer__item--icon">
+            <img src="img/fb.svg" alt="#">
+          </li>
+          <li class="footer__item--icon">
+            <img src="img/twt.svg" alt="#">
+          </li>
+          <li class="footer__item--icon">
+            <img src="img/in.svg" alt="#">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="footer-copywriters container">
+      <a class="logo footer__logo" href="#">
+        <img src="img/fusely%20logo.svg" alt="logo">
+      </a>
+      <div class="footer-copywriters__text">© Fusely 2021. All rights reserved.</div>
+    </section>
+  </footer>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

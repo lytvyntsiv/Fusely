@@ -1,0 +1,51 @@
+.contact-banner {
+  max-width: 100%;
+  padding: 77px 44px;
+  background: $colorDark;
+
+  &__tittle {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  &__button {
+    margin: 0 auto;
+  }
+
+  @include tablet {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__tittle {
+      font-size: 50px;
+      line-height: 56px;
+      text-align: start;
+    }
+  }
+  @include desktop {
+    position: absolute;
+    bottom: -515px;
+    left: 50%;
+    box-sizing: border-box;
+    margin-left: -450px;
+    width: 900px;
+    padding: 77px 84px;
+
+    &__tittle {
+      max-width: 346px;
+    }
+    &__container {
+      margin: 0 auto;
+    }
+    &__button {
+      margin: 0;
+    }
+  }
+}

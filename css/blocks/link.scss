@@ -1,0 +1,30 @@
+.link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 111%;
+  letter-spacing: -1px;
+  color: $colorDark;
+  position: relative;
+  transition-duration: .3s;
+
+  &:hover {
+    font-size: 20px;
+  }
+  &:hover::after{
+    background-color: rgba(197, 194, 255, 1);
+    transform: scale(1.1);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 10px);
+    height: 10px;
+    left: calc(50% - ((100% + 8px) / 2));
+    top: 60%;
+    background-color: rgba(197, 194, 255, 0.5);
+    transition-duration: 1s;
+  }
+}

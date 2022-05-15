@@ -1,0 +1,16 @@
+.partners {
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  &__wrap {
+    padding: 15px 5px;
+  }
+  &__img:hover {
+    transform: scale(1.2) translatey(10px);
+    transition-duration: .3s;
+  }
+}
